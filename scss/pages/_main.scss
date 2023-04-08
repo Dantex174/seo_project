@@ -1,0 +1,86 @@
+.promo {
+    background: url(../../img/promo_bg.jpg) center (center/cover) no-repeat;
+    background-attachment: fixed;
+    height: 500px;
+    position: relative;
+    
+    &__wrapper {
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+    
+            background-color: rgba(0, 0, 0, .7);
+        }
+    }
+    &__text {
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 70px;
+            line-height: 110%;
+            color: white;
+            text-align: center;
+        }
+        .descr {
+            margin-top: 20px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 150%;
+            color: white;
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+//Мобильный адаптив
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .promo {
+        height: 400px;
+        .title {
+            font-size: 63px;
+        }
+        .descr {
+            font-size: 23px;
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+    .promo {
+        height: 400px;
+        .title {
+            font-size: 50px;
+        }
+        .descr {
+            font-size: 23px;
+        }
+    }
+}

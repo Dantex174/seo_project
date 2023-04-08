@@ -1,6 +1,7 @@
 .header {
-    // background-color: grey;
+    background-color: #F4F4F4;
     border-bottom: 1px solid grey;
+    position: relative;
     &__wrapper {
         height: 80px;
         display: flex;
@@ -25,7 +26,7 @@
         &__item {
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 15px;
             line-height: 150%;
             a {
                 color: #113454;
@@ -68,6 +69,9 @@
         @import '../base/menuBurger';
         .menu, .btn_header {
             display: none;
+        }
+        .logo {
+            position: fixed;
         }
     }
 }
