@@ -1,0 +1,19 @@
+//Сброс стилей
+@import 'reset';
+//Импорт шрифта
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+//Установка шрифта
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding: 0 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+//Импорт блоков
+@import './base/header';
+//Импорт страниц

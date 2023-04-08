@@ -1,0 +1,73 @@
+.header {
+    // background-color: grey;
+    border-bottom: 1px solid grey;
+    &__wrapper {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        margin-top: -10px;
+        &__img {
+            width: 100%;
+        }
+    }
+    .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 20px;
+            gap: 30px;
+        &__item {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            a {
+                color: #113454;
+            }
+        }
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 192px;
+        height: 56px;
+        background: #2ECC71;
+        border-radius: 8px;
+        text-align: center;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
+    //Импорт менюБургер
+    @import './menuBurger';
+
+    @media (min-width: 991px) {
+        .header__wrapper {
+            input {
+                display: none;
+            }
+            label {
+                display: none;
+            }
+            #menu {
+                display: none;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        @import '../base/menuBurger';
+        .menu, .btn_header {
+            display: none;
+        }
+    }
+}
