@@ -1,5 +1,4 @@
 .header {
-    background-color: #F4F4F4;
     border-bottom: 1px solid grey;
     position: relative;
     &__wrapper {
@@ -69,9 +68,6 @@
         @import '../base/menuBurger';
         .menu, .btn_header {
             display: none;
-        }
-        .logo {
-            position: fixed;
         }
     }
 }
