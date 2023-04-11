@@ -15,6 +15,35 @@
         &__img {
             width: 100%;
         }
+        &:hover {
+            -webkit-animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+            -moz-animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+            -o-animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+            animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+        }
+        @keyframes trambling-animation {
+           0%, 50%, 100% {
+             transform: rotate(0deg);
+             -webkit-transform: rotate(0deg);
+             -moz-transform: rotate(0deg);
+             -o-transform: rotate(0deg);
+             -ms-transform: rotate(0deg);
+           }
+           10%, 30% {
+             transform: rotate(-10deg);
+             -webkit-transform: rotate(-10deg);
+             -moz-transform: rotate(-10deg);
+             -o-transform: rotate(-10deg);
+             -ms-transform: rotate(-10deg);
+           }
+           20%, 40% {
+             transform: rotate(10deg);
+             -webkit-transform: rotate(10deg);
+             -moz-transform: rotate(10deg);
+             -o-transform: rotate(10deg);
+             -ms-transform: rotate(10deg);
+           }
+        }
     }
     .menu {
             display: flex;
@@ -32,22 +61,7 @@
             }
         }
     }
-    .btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 192px;
-        height: 56px;
-        background: #2ECC71;
-        border-radius: 8px;
-        text-align: center;
 
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 150%;
-        color: #FFFFFF;
-    }
     //Импорт менюБургер
     @import './menuBurger';
 
@@ -69,5 +83,25 @@
         .menu, .btn_header {
             display: none;
         }
+    }
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 192px;
+    height: 56px;
+    background: #2ECC71;
+    border-radius: 8px;
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    transition: all 0.3s;
+    &:hover {
+        background-color: #24a459;
     }
 }

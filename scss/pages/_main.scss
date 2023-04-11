@@ -1,9 +1,11 @@
+//Секция промо
 .promo {
     background: url(../img/promo_bg.jpeg) center (center/cover) no-repeat;
     background-attachment: fixed;
     height: 500px;
     position: relative;
     &__wrapper {
+        //затемнение фона
         &::after {
             content: "";
             display: block;
@@ -13,7 +15,7 @@
             z-index: 2;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, .8);
+            background-color: rgba(0, 0, 0, .7);
         }
     }
     &__text {
@@ -53,6 +55,10 @@
     line-height: 120%;
     text-align: center;
     color: #113454;
+    &_h3 {
+        margin-top: 40px;
+        font-size: 32px;
+    }
 }
 .text {
     max-width: 900px;
@@ -64,9 +70,72 @@
     line-height: 150%;
     color: #113454;
 }
+
+//Секция About
 .about {
     padding: 40px 0;
 }
+
+//Секция RTP
+.aboutRtp {
+    padding: 40px 0;
+    .topRtpCasino{
+        margin: 0 auto;
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__box {
+            width: 100%;
+            height: 110px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 20px;
+
+            background: #F4F4F4;
+            border-radius: 15px;
+            .logoCasino {
+                width: 70px;
+                border-radius: 100%;
+                &__img {
+                    width: 100%;
+                    border-radius: 100%;
+                }
+            }
+            .nameCasino {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 120%;
+                color: #113454;
+            }
+            .rateCasino {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 110px;
+                position: relative;
+                span {
+                    position: absolute;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 26px;
+                    line-height: 120%;
+                    color: #113454;
+                }
+                &__img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+//Test
 .test {
     height: 100px;
     background: url(../img/promo_bg.jpeg) center (center/cover) no-repeat;
@@ -83,7 +152,7 @@
             width: 100%;
             height: 100%;
     
-            background-color: rgba(0, 0, 0, .8);
+            background-color: rgba(0, 0, 0, .7);
         }
     }
 }
@@ -110,6 +179,31 @@
             font-size: 23px;
         }
     }
+    .test {
+        height: 50px;
+    }
+    .aboutRtp {
+        .topRtpCasino {
+            &__box {
+                .logoCasino {
+                    width: 70px;
+                }
+                .nameCasino {
+                    font-size: 25px;
+                }
+                .rateCasino {
+                    width: 90px;
+                    span {
+                        font-size: 20px;
+                    }
+                }
+                .btn_ref {
+                    width: 130px;
+                    height: 50px;
+                }
+            }
+        }
+    }
 }
 @media (min-width: 320px) and (max-width: 575px) {
     .promo {
@@ -120,5 +214,21 @@
         &__descr {
             font-size: 23px;
         }
+    }
+    .aboutRtp {
+        .topRtpCasino {
+            &__box {
+                flex-direction: column;
+                gap: 10px;
+                height: 280px;
+            }
+
+        }
+    }
+    .title {
+        font-size: 30px;
+    }
+    .text {
+        font-size: 14px;
     }
 }
