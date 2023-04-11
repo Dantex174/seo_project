@@ -135,6 +135,52 @@
     }
 }
 
+.linksInPages {
+    padding: 40px 0;
+    &__wrapper {
+        .blockWithLinks {
+            margin: 0 auto;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 210px;
+                height: 120px;
+                background: #FFFFFF;
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.06);
+                border-radius: 8px;
+            }
+            &__icon {
+                width: 50px;
+                img {
+                    width: 100%;
+                }
+                .trans {
+                    transform: translateX(5px);
+                }
+            }
+            &__title {
+                margin-top: 15px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                text-align: center;
+                color: #113454;
+            }
+        }
+    }
+}
+.selectedForLinks_bg {
+    background: #113454;
+}
+.selectedForLinks_color {
+    color: #FFFFFF;
+}
 //Test
 .test {
     height: 100px;
@@ -164,10 +210,23 @@
 
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+    .linksInPages {
+        .blockWithLinks {
+            &__box {
+                width: 180px;
+            }
+        }
+    }
 
 }
 @media (min-width: 768px) and (max-width: 991px) {
-
+    .linksInPages {
+        .blockWithLinks {
+            &__box {
+                width: 143px;
+            }
+        }
+    }
 }
 @media (min-width: 576px) and (max-width: 767px) {
     .promo {
@@ -204,6 +263,17 @@
             }
         }
     }
+    .linksInPages {
+        .blockWithLinks {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__box {
+                margin-bottom: 10px;
+                width: 50%;
+            }
+        }
+    }
 }
 @media (min-width: 320px) and (max-width: 575px) {
     .promo {
@@ -230,5 +300,16 @@
     }
     .text {
         font-size: 14px;
+    }
+    .linksInPages {
+        .blockWithLinks {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__box {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+        }
     }
 }
