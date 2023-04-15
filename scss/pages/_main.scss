@@ -74,6 +74,7 @@
 //Секция About
 .about {
     padding: 40px 0;
+    background-color: #F4F4F4;
 }
 
 //Секция RTP
@@ -187,26 +188,31 @@
 }
 
 .faq {
+    background-color: #F4F4F4;
     padding: 40px 0;
     &__wrapper {
         margin: 0 auto;
         margin-top: 30px;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         width: 900px;
         flex-wrap: wrap;
         gap: 20px;
         .question {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            margin: 0 auto;
             padding: 24px 32px;
-            width: 430px;
-            height: 75px;
-            background: #F4F4F4;
+            width: 80%;
+            min-height: 75px;
+            background: #FFFFFF;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.06);
             border-radius: 8px;
-            &__text {
+            &__wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            &__title {
                 font-style: normal;
                 font-weight: 400;
                 font-size: 18px;
@@ -215,6 +221,11 @@
             }
             &__icon {
                 cursor: pointer;
+            }
+            &__text {
+                margin-top: 20px;
+                font-size: 15px;
+                width: 90%;
             }
         }
     }
@@ -272,7 +283,7 @@
             justify-content: center;
             .question {
                 // margin: 0 auto;
-                width: 40%;
+                width: 80%;
             }
         }
     }
@@ -380,9 +391,10 @@
             .question {
                 margin: 0 auto;
                 width: 100%;
-                padding: 10px 20px;
-                height: 60px;
+                padding: 16px 20px;
+                min-height: 60px;
                 &__text {
+                    transition: all 0.3s;
                     font-size: 15px;
                 }
             }
