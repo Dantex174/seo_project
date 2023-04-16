@@ -74,20 +74,15 @@
         color: white;
         text-align: center;
     }
-    background-attachment: fixed;
     @media (min-width: 1200px) {
     }
     @media (min-width: 992px) and (max-width: 1199px) {
     }
     @media (min-width: 768px) and (max-width: 991px) {
-        .promo {
-            background-attachment: local;
-        }
     }
     @media (min-width: 576px) and (max-width: 767px) {
         .promo {
             height: 400px;
-            background-attachment: local;
             &__title {
                 font-size: 63px;
             }
@@ -99,7 +94,6 @@
     @media (min-width: 320px) and (max-width: 575px) {
         .promo {
             height: 400px;
-            background-attachment: local;
             &__title {
                 font-size: 50px;
             }
@@ -107,6 +101,12 @@
                 font-size: 23px;
             }
         }
+    }
+}
+.promoMdBg {
+    @media (max-width: 991px) {
+        background: url(../img/promo_bg.jpeg) center (center/cover) no-repeat;
+        background-attachment: local;
     }
 }
 
