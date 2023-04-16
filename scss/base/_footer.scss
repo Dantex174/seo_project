@@ -1,0 +1,93 @@
+.footer {
+    padding: 40px 0;
+    border-top: 1.5px solid grey;
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__about {
+        max-width: 456px;
+        .logo {
+            display: block;
+            width: 200px;
+            &__img {
+                width: 100%;
+            }
+            &__text {
+                margin-top: 20px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color: #113454;
+            }
+        }
+    }
+    &__links {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu {
+        max-width: 184px;
+        margin-right: 50px;
+        .menu__list {
+            margin-top: 16px;
+        }
+        .menu__item {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            gap: 12px;
+            a {
+                color: #113454;
+            }
+        }
+    }
+    &__popularCasino {
+        max-width: 184px;
+        .casino__list {
+            margin-top: 16px;
+        }
+        .casino__item {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            gap: 12px;
+            a {
+                color: #113454;
+            }
+        }
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: #113454;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .footer {
+            &__about {
+                max-width: 350px;
+            }
+        }
+    }
+    @media (min-width: 320px) and (max-width: 767px) {
+        .footer {
+            &__wrapper {
+                flex-direction: column;
+            }
+            &__about {
+                max-width: 100%;
+            }
+            &__links {
+                margin-top: 20px;
+                justify-content: start;
+            }
+        }
+    }
+
+}
