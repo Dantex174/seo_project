@@ -53,16 +53,25 @@
     }
     &__btn {
         display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 0 auto;
         margin-top: 24px;
         width: 138px;
         height: 53px;
+        background-color: #2ECC71;
+        border-radius: 8px;
+        text-align: center;
 
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
         line-height: 150%;
         color: #FFFFFF;
+        transition: all 0.3s;
+        &:hover {
+            background-color: #24a459;
+        }
     }
     &__moreInfo {
         display: block;
@@ -87,6 +96,12 @@
         bottom: 16px;
         left: 50%;
         transform: translateX(-50%);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;
+        color: #707487;
     }
 }
 @media (min-width: 1200px) {
