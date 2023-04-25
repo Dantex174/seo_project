@@ -14,8 +14,6 @@
     margin: 0 auto;
 }
 
-
-
 .hiddenAnswer {
     display: none;
     margin-top: 0;
@@ -128,3 +126,8 @@
 @import './pages/payment';
 @import './pages/bonus';
 @import './pages/roulette';
+
+
+.displayNone {
+    display: none;
+}
