@@ -61,7 +61,12 @@
         margin-top: 40px;
         font-size: 32px;
     }
+    &_low {
+        margin-top: 20px;
+        font-size: 32px;
+    }
 }
+
 
 //Текст
 .text {
@@ -74,6 +79,15 @@
     font-size: 18px;
     line-height: 150%;
     color: #113454;
+}
+.img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 600px;
+    img {
+        width: 100%;
+    }
 }
 
 //Топ Казино
@@ -143,12 +157,22 @@
     padding: 40px 0;
     background-color: #FFFFFF;
 }
+//Секция о заработке
+.aboutEarning {
+    padding: 40px 0;
+    background-color: #F4F4F4;
+}
+//Секция как выбрать казино
+.howChooseCasino {
+    padding: 40px 0;
+}
 
 //Секция RTP
 .aboutRtp {
     padding: 40px 0;
     background-color: #F4F4F4;
 }
+
 
 //Стили меню active
 .selectedForLinks_bg {
