@@ -2,6 +2,7 @@
 //Меню
 .linksInPages {
     padding: 40px 0;
+    background-color: #111928;
     &__wrapper {
         .blockWithLinks {
             margin: 0 auto;
@@ -16,7 +17,7 @@
                 align-items: center;
                 width: 210px;
                 height: 120px;
-                background: #FFFFFF;
+                background: #1F2A37;
                 box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.06);
                 border-radius: 8px;
                 transition: all 0.3s;
@@ -42,7 +43,7 @@
                 font-size: 18px;
                 line-height: 150%;
                 text-align: center;
-                color: #113454;
+                color: #FFFFFF;
             }
         }
     }
@@ -52,11 +53,11 @@
 .title {
     padding: 0 10px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 40px;
     line-height: 120%;
     text-align: center;
-    color: #113454;
+    color: #FFFFFF;
     &_h3 {
         margin-top: 40px;
         font-size: 32px;
@@ -78,7 +79,13 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    color: #113454;
+    text-align: justify;
+    color: #9CA3AF;
+    span {
+        font-size: 20px; 
+        font-weight: 700;
+        line-height: 200%;
+    }
 }
 .img {
     display: block;
@@ -98,9 +105,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     &__box {
         width: 100%;
-        height: 110px;
+        height: 90px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -108,8 +116,8 @@
         margin-top: 20px;
         padding: 20px;
 
-        background: #FFFFFF;
-        border-radius: 15px;
+        background: #111928;
+        border-radius: 15px; 
         .logoCasino {
             width: 70px;
             border-radius: 100%;
@@ -123,7 +131,7 @@
             font-weight: 700;
             font-size: 30px;
             line-height: 120%;
-            color: #113454;
+            color: #ffffff;
         }
         .rateCasino {
             display: flex;
@@ -140,7 +148,7 @@
                 color: #113454;
             }
             &__img {
-                width: 70%;
+                width: 60%;
             }
         }
     }
@@ -149,22 +157,120 @@
 //Секция Топ Казино
 .topCasinoSection {
     padding: 40px 0;
-    background-color: #F4F4F4;
+    background: #1F2A37;
 }
 
 //Секция About
 .about {
     padding: 40px 0;
-    background-color: #FFFFFF;
+    background-color: #111928;
+   .whyUs {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        &__block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 290px;
+        }
+        &__img {
+            width: 80px;
+            img {
+                width: 100%;
+            }
+            &_correct {
+                margin-top: -15px;
+                width: 100px;
+            }
+        }
+        &__text {
+            width: 100%;
+            margin-top: 15px;
+            color: #9CA3AF;
+            text-align:justify;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 150%;
+        }
+    }
 }
 //Секция о заработке
 .aboutEarning {
     padding: 40px 0;
-    background-color: #F4F4F4;
+    background-color: #1F2A37;
 }
 //Секция как выбрать казино
 .howChooseCasino {
     padding: 40px 0;
+    background-color: #111928;
+    .licenses {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 35px;
+        &__box {
+            width: 290px;
+        }
+        &__img {
+            width: 290px;
+            img {
+                width: 100%;
+            }
+        }
+        &__title {
+            margin-top: 15px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 120%;
+            color: #fff;
+        }
+        &__descr {
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #9CA3AF;
+            text-align: justify;
+        }
+    }
+    &__table {
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 900px;
+
+    background: #1F2A37;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    padding: 20px;
+        .tableContent {
+            &__title {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 150%;
+                color: #FFFFFF;
+            }
+            &__descr {
+                margin-top: 10px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: #9CA3AF;
+                a {
+                    color: #F4F4F4;
+                }
+            }
+        }
+        .grey-line {
+        margin: 20px 0;
+        height: 1px;
+        background-color: #374151;
+        }
+    }
 }
 
 //Секция RTP
@@ -227,11 +333,10 @@
     }
 }
 //Test
-.test {
-    height: 100px;
-    background: url(../img/promo_bg.jpeg) center (center/cover) no-repeat;
+.fact {
+    background: url(../img/john-schnobrich-VnHzobjGra4-unsplash.jpg) center (center/cover) no-repeat;
     background-attachment: fixed;
-    // background-color: black;
+    height: 205px;
     position: relative;
     &__wrapper {
         &::after {
@@ -243,9 +348,24 @@
             z-index: 2;
             width: 100%;
             height: 100%;
-    
             background-color: rgba(0, 0, 0, .7);
         }
+    }
+    &__text {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 35px 10px;
+        max-width: 900px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 150%;
+        z-index: 3;
+        color:#FFFFFF
     }
 }
 
@@ -273,6 +393,30 @@
             }
         }
     }
+    .about {
+        .whyUs__block {
+            max-width: 200px;
+        }
+        .whyUs__text {
+            font-size: 13px;
+        }
+    }
+    .howChooseCasino {
+        .licenses {
+            &__box {
+                width: 210px;
+            }
+            &__img {
+                width: 210px;
+            }
+            &__title {
+                font-size: 17px;
+            }
+            &__descr {
+                font-size: 13px;
+            }
+        }
+    }
     .faq {
         &__wrapper {
             width: 100%;
@@ -285,9 +429,6 @@
     }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-    .test {
-        height: 50px;
-    }
     .topCasino {
         &__box {
             .logoCasino {
@@ -316,6 +457,49 @@
             &__box {
                 margin-bottom: 10px;
                 width: 50%;
+            }
+        }
+    }
+    .about {
+        .whyUs {
+            margin-top: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .whyUs__block {
+            margin-top: 30px;
+            max-width: 90%;
+        }
+        .whyUs__text {
+            font-size: 13px;
+        }
+    }
+    .fact {
+        &__text {
+            font-size: 17px;
+        }
+    }
+    .howChooseCasino {
+        .licenses {
+            flex-direction: column;
+            margin-top: 0;
+            &__box {
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 35px;
+                justify-content: center;
+            }
+            &__img {
+                display: block;
+                margin: 0 auto;
+                width: 90%;
+            }
+            &__title {
+                font-size: 23px;
+            }
+            &__descr {
+                font-size: 17px;
             }
         }
     }
@@ -353,6 +537,49 @@
             &__box {
                 margin-bottom: 10px;
                 width: 100%;
+            }
+        }
+    }
+    .about {
+        .whyUs {
+            margin-top: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .whyUs__block {
+            margin-top: 30px;
+            max-width: 90%;
+        }
+        .whyUs__text {
+            font-size: 13px;
+        }
+    }
+    .fact {
+        &__text {
+            font-size: 14px;
+        }
+    }
+    .howChooseCasino {
+        .licenses {
+            flex-direction: column;
+            margin-top: 0;
+            &__box {
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 35px;
+                justify-content: center;
+            }
+            &__img {
+                display: block;
+                margin: 0 auto;
+                width: 90%;
+            }
+            &__title {
+                font-size: 17px;
+            }
+            &__descr {
+                font-size: 13px;
             }
         }
     }

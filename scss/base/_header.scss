@@ -1,5 +1,6 @@
 .header {
     position: relative;
+    background: #111928;
     &__wrapper {
         height: 80px;
         display: flex;
@@ -10,10 +11,11 @@
         width: 200px;
         display: flex;
         align-items: center;
-        margin-top: -10px;
-        &__img {
-            width: 100%;
-        }
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 150%;
+        color: #FFFFFF;
     }
     .menu {
             display: flex;
@@ -27,7 +29,7 @@
             font-size: 15px;
             line-height: 150%;
             a {
-                color: #113454;
+                color: #FFFFFF;
             }
         }
     }
@@ -61,7 +63,7 @@
     align-items: center;
     width: 192px;
     height: 56px;
-    background: #2ECC71;
+    background: #1C64F2;
     border-radius: 8px;
     text-align: center;
 
@@ -69,7 +71,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
-    color: #FFFFFF;
+    color: #fff;
     transition: all 0.3s;
     &:hover {
         background-color: #24a459;

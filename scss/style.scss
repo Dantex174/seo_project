@@ -1,11 +1,11 @@
 //Сброс стилей
 @import 'reset';
 //Импорт шрифта
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
 //Установка шрифта
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .container {
@@ -27,7 +27,7 @@
 
 //Секция промо
 .promo {
-    background: url(../img/promo_bg.jpeg) center (center/cover) no-repeat;
+    background: url(../img/john-schnobrich-VnHzobjGra4-unsplash.jpg) center (center/cover) no-repeat;
     background-attachment: fixed;
     height: 500px;
     position: relative;
@@ -60,7 +60,7 @@
     &__title {
         font-style: normal;
         font-weight: 400;
-        font-size: 70px;
+        font-size: 100px;
         line-height: 110%;
         color: white;
         text-align: center;
