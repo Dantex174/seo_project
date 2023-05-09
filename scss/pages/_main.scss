@@ -1,4 +1,9 @@
 
+.promo {
+    @media (max-width: 991px) {
+        background-attachment: local;
+    }
+}
 //Меню
 .linksInPages {
     padding: 40px 0;
@@ -100,6 +105,9 @@
         img {
             border-radius: 12px;
         }
+    }
+    &_payment {
+        max-width: 450px;
     }
 }
 
@@ -387,6 +395,9 @@
     background-attachment: fixed;
     height: 205px;
     position: relative;
+    @media (max-width: 991px) {
+        background-attachment: local;
+    }
     &__wrapper {
         &::after {
             content: "";
