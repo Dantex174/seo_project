@@ -95,6 +95,12 @@
     img {
         width: 100%;
     }
+    &_recommendations {
+        border-radius: 12px;
+        img {
+            border-radius: 12px;
+        }
+    }
 }
 
 //Топ Казино
@@ -276,7 +282,25 @@
 //Секция RTP
 .aboutRtp {
     padding: 40px 0;
-    background-color: #F4F4F4;
+    background: #1F2A37;
+    &__table {
+        margin: 0 auto;
+        margin-top: 30px;
+        max-width: 900px;
+    
+        background-color: #111928;
+        border: 1px solid #374151;
+        border-radius: 8px;
+        padding: 20px;
+        color: #9CA3AF;
+        text-align: center;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #9CA3AF;
+    }
 }
 
 
@@ -288,9 +312,33 @@
     color: #FFFFFF;
 }
 
+.recommendations {
+    padding: 40px 0;
+    background-color: #111928;
+    &__wrapper {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__text {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    &__img {
+        width: 320px;
+        display: flex;
+        justify-content: center;
+
+        img {
+            border-radius: 12px;
+        }
+    }
+}
+
+
 //Секция FAQ
 .faq {
-    background-color: #FFFFFF;
+    background: #1F2A37;
     padding: 40px 0;
     &__wrapper {
         margin: 0 auto;
@@ -306,7 +354,7 @@
             padding: 24px 32px;
             width: 80%;
             min-height: 75px;
-            background: #f4f4f4;
+            background-color: #111928;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.06);
             border-radius: 8px;
             &__wrapper {
@@ -319,7 +367,7 @@
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 150%;
-                color: #113454;
+                color: #ffffff;
             }
             &__icon {
                 cursor: pointer;
@@ -328,6 +376,7 @@
                 margin-top: 20px;
                 font-size: 15px;
                 width: 90%;
+                color: #9CA3AF
             }
         }
     }
@@ -417,6 +466,14 @@
             }
         }
     }
+    .recommendations {
+        &__img {
+            display: none;
+        }
+        &__text {
+            max-width: 100%;
+        }
+    }
     .faq {
         &__wrapper {
             width: 100%;
@@ -503,6 +560,14 @@
             }
         }
     }
+    .recommendations {
+        &__img {
+            display: none;
+        }
+        &__text {
+            max-width: 100%;
+        }
+    }
     .faq {
         &__wrapper {
             flex-direction: column;
@@ -581,6 +646,14 @@
             &__descr {
                 font-size: 13px;
             }
+        }
+    }
+    .recommendations {
+        &__img {
+            display: none;
+        }
+        &__text {
+            max-width: 100%;
         }
     }
     .faq {
