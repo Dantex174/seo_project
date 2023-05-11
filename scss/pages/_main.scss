@@ -250,7 +250,9 @@
             text-align: justify;
         }
     }
-    &__table {
+    
+}
+.table {
     margin: 0 auto;
     margin-top: 30px;
     max-width: 900px;
@@ -285,7 +287,11 @@
         background-color: #374151;
         }
     }
-}
+.grey-line {
+    margin: 20px 0;
+    height: 1px;
+    background-color: #374151;
+    }
 
 //Секция RTP
 .aboutRtp {
