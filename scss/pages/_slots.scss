@@ -1,13 +1,14 @@
 .slotsPromo {
     background: url(../img/slots_bg.jpg) center (center/cover) no-repeat;
     background-attachment: fixed;
+    padding: 0 20px;
     @media (max-width: 991px) {
         background-attachment: local;
     }
 }
 .topSlotsBrazil {
     padding: 40px 0;
-    background-color: #f4f4f4;
+    background-color: #1F2A37;
     &__wrapper {
         display: flex;
         justify-content: space-around;
@@ -20,7 +21,7 @@
     position: relative;
     width: 290px;
     height: 390px;
-    background-color: white;
+    background-color: #111928;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     gap: 30px;
@@ -40,7 +41,7 @@
         font-size: 18px;
         line-height: 150%;
         text-align: center;
-        color: #113454;
+        color: #FFFFFF;
     }
     &__descr {
         margin-top:6px;
@@ -49,7 +50,7 @@
         font-size: 14px;
         line-height: 150%;
         text-align: center;
-        color: #113454;
+        color: #9CA3AF;
     }
     &__btn {
         display: flex;
@@ -59,7 +60,7 @@
         margin-top: 10px;
         width: 138px;
         height: 53px;
-        background-color: #2ECC71;
+        background: #1C64F2;
         border-radius: 8px;
         text-align: center;
 
@@ -70,7 +71,7 @@
         color: #FFFFFF;
         transition: all 0.3s;
         &:hover {
-            background-color: #24a459;
+            background-color: #2ECC71;
         }
     }
     &__moreInfo {
@@ -81,7 +82,7 @@
         font-size: 14px;
         line-height: 150%;
         text-align: center;
-        color: #707487;
+        color: #FFFFFF;
     }
     &__textAbout {
         padding: 15px 10px;
@@ -104,6 +105,42 @@
         color: #707487;
     }
 }
+
+.rulesSlots {
+    padding: 40px 0;
+    background-color: #111928;
+}
+
+.tableHTML {
+    padding: 40px 0 20px;
+    background-color: #1F2A37;
+    &__title {
+        color: #FFFFFF;
+        text-align: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        color: #fff;
+        th {
+            max-width: 220px;
+            height: 30px;
+            padding: 7px;
+        }
+    }
+    &__text {
+        height: 60px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #9CA3AF;
+        text-align: center;
+    }
+}
+.greyRowtable {
+    background-color:#111928;
+}
 @media (min-width: 1200px) {
 
 }
@@ -118,7 +155,10 @@
         &__textAbout {
             font-size: 15px;
         }
-     }
+    }
+    .tableHTML {
+        display: none;
+    }
 }
 @media (min-width: 320px) and (max-width: 575px) {
  .cardSlot {
@@ -126,5 +166,8 @@
         font-size: 15px;
     }
  }
+ .tableHTML {
+    display: none;
+}
 }
 
