@@ -90,7 +90,7 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 150%;
-        color: #113454;
+        color: #FFFFFF;
     }
     &__back {
         position: absolute;
@@ -129,10 +129,11 @@
         }
     }
     &__text {
+        padding: 0 5px;
         height: 60px;
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 150%;
         color: #9CA3AF;
         text-align: center;
