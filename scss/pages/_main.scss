@@ -352,11 +352,16 @@
     }
 }
 
+.realPeople {
+    padding: 40px 0;
+    background-color: #1F2A37;
+}
 
 //Секция FAQ
 .faq {
     background: #1F2A37;
     padding: 40px 0;
+    border-top: 1.5px solid grey;
     &__wrapper {
         margin: 0 auto;
         margin-top: 30px;
