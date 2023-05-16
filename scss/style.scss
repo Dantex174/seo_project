@@ -25,6 +25,8 @@
     transform: rotate(-180deg);
 }
 
+
+
 //Секция промо
 .promo {
     background: url(../img/john-schnobrich-VnHzobjGra4-unsplash.jpg) center (center/cover) no-repeat;
@@ -131,4 +133,10 @@
 
 .displayNone {
     display: none;
+}
+.bgDark {
+    background-color: #111928;
+}
+.bgLight {
+    background-color: #1F2A37;
 }
