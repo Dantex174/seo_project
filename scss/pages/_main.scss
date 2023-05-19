@@ -119,19 +119,70 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     &__box {
         width: 100%;
-        height: 90px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        // height: 90px;
         margin: 0 auto;
         margin-top: 20px;
         padding: 20px;
 
         background: #111928;
         border-radius: 15px; 
+        &_wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &_descr {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            .responseTimer {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                width: 278px;
+                &__img {
+                    width: 30px;
+                    height: 30px;
+                }
+                &__text {
+                    color: white;
+                    font-size: 15px;
+                }
+            }
+            .trust {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                width: 293px;
+                &__img {
+                    width: 30px;
+                    height: 30px;
+                }
+                &__text {
+                    color: white;
+                    font-size: 15px;
+                    margin: 0 auto;
+                }
+            }
+            .reward {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                width: 170px;
+                &__img {
+                    width: 30px;
+                    height: 30px;
+                }
+                &__text {
+                    margin: 0 auto;
+                    color: white;
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }
+        }
         .logoCasino {
             width: 70px;
             border-radius: 100%;
@@ -141,30 +192,64 @@
             }
         }
         .nameCasino {
+            display: block;
+            width: 180px;
             font-style: normal;
             font-weight: 700;
-            font-size: 30px;
+            font-size: 25px;
             line-height: 120%;
             color: #ffffff;
         }
-        .rateCasino {
+        .rateCasinoWrapper {
             display: flex;
+            gap: 20px;
             align-items: center;
             justify-content: center;
-            width: 110px;
-            position: relative;
-            span {
-                position: absolute;
-                font-style: normal;
-                font-weight: 700;
-                font-size: 26px;
-                line-height: 120%;
-                color: #113454;
-            }
-            &__img {
-                width: 60%;
-            }
+            .rateCasino {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                &__text {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    // margin-top: -20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: #FFFFFF;
+                }
+                &__count {
+
+                    border-radius: 100%;
+                    height: 60px;
+                    width: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 21px;
+                    line-height: 120%;
+
+                    color: #111928;
+
+                    &_yellow {
+                        background-color: #FFD700;
+                        border: 3px solid #FF8C00;
+                    }
+                    &_green {
+                        background-color: #24a459;
+                        border: 3px solid #006400;
+                    }
+                }
         }
+        }
+        
     }
 }
 
@@ -469,6 +554,18 @@
             }
         }
     }
+    .topCasino {
+        &__box {
+            .nameCasino {
+                width: 130px;
+                font-size: 18px;
+            }
+        }
+    }
+    .topCasino__box .rateCasinoWrapper .rateCasino__count {
+        height: 50px;
+        width: 50px;
+    }
     .about {
         .whyUs__block {
             max-width: 200px;
@@ -516,21 +613,40 @@
     .topCasino {
         &__box {
             .logoCasino {
-                width: 70px;
+                width: 130px;
             }
             .nameCasino {
-                font-size: 25px;
-            }
-            .rateCasino {
-                width: 90px;
-                span {
-                    font-size: 20px;
-                }
+                width: 220px;
+                margin-top: 10px;
+                text-align: center;
+                font-size: 30px;
             }
             .btn_ref {
+                margin-top: 15px;
                 width: 130px;
                 height: 50px;
             }
+            .rateCasinoWrapper {
+                .rateCasino {
+                    margin-top: 15px;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    &__text {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .topCasino__box_wrapper {
+        flex-direction: column;
+    }
+    .topCasino__box_descr {
+        flex-direction: column;
+        align-items: center;
+        .responseTimer, .trust, .reward {
+            flex-direction: column;
+            text-align: center;
         }
     }
     .linksInPages {
@@ -610,9 +726,41 @@
 @media (min-width: 320px) and (max-width: 575px) {
     .topCasino {
         &__box {
+            .logoCasino {
+                width: 130px;
+            }
+            .nameCasino {
+                width: 220px;
+                margin-top: 10px;
+                text-align: center;
+                font-size: 30px;
+            }
+            .btn_ref {
+                margin-top: 15px;
+                width: 130px;
+                height: 50px;
+            }
+            .rateCasinoWrapper {
+                .rateCasino {
+                    margin-top: 15px;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    &__text {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .topCasino__box_wrapper {
+        flex-direction: column;
+    }
+    .topCasino__box_descr {
+        flex-direction: column;
+        align-items: center;
+        .responseTimer, .trust, .reward {
             flex-direction: column;
-            gap: 10px;
-            height: 280px;
+            text-align: center;
         }
     }
     .title {
