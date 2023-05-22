@@ -33,27 +33,19 @@
             }
         }
     }
+    .hamburger-menu {
+        display: none;
+    }
 
     //Импорт менюБургер
     @import './menuBurger';
-
-    @media (min-width: 991px) {
-        .header__wrapper {
-            input {
-                display: none;
-            }
-            label {
-                display: none;
-            }
-            #menu {
-                display: none;
-            }
-        }
-    }
     @media (max-width: 991px) {
         @import '../base/menuBurger';
         .menu, .btn_header {
             display: none;
+        }
+        .hamburger-menu {
+            display: block;
         }
     }
 }
