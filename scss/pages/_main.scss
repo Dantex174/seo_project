@@ -1,5 +1,6 @@
 
 .promo {
+    background: url(../img/main/main_bg.jpg) center (center/cover) no-repeat;
     @media (max-width: 991px) {
         background-attachment: local;
     }
@@ -493,7 +494,7 @@
 }
 //Test
 .fact {
-    background: url(../img/john-schnobrich-VnHzobjGra4-unsplash.jpg) center (center/cover) no-repeat;
+    background: url(../img/main/main_bg.jpg) center (center/cover) no-repeat;
     background-attachment: fixed;
     height: 205px;
     position: relative;
