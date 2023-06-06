@@ -1,0 +1,7 @@
+User-agent: Googlebot
+User-agent: AdsBot-Google
+Disallow:
+Allow: /
+Sitemap: https://spintowinn.com/sitemap.xml
+
+Host: https://spintowinn.com
